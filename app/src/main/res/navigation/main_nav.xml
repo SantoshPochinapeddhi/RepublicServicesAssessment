@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    app:startDestination="@+id/driverList">
+
+    <fragment
+        android:id="@+id/driverList"
+        android:name="com.santosh.republicservices.ui.drivers.DriverListFragment"
+        android:label="@string/drivers"
+        tools:layout="@layout/fragment_driver_list">
+        <action
+            android:id="@+id/action_driver_list_to_route_info"
+            app:destination="@id/routeInfo"
+            app:popUpTo="@id/driverList"
+            app:popUpToInclusive="false">
+            <argument
+                android:name="driverId"
+                android:defaultValue="-1"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/routeInfo"
+        android:name="com.santosh.republicservices.ui.routes.RouteFragment"
+        android:label="@string/route"
+        tools:layout="@layout/fragment_route_info" />
+</navigation>

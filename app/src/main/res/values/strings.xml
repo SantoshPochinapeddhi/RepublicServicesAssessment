@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Republic Services</string>
+    <string name="drivers">Drivers</string>
+    <string name="route">Route</string>
+    <string name="sort_drivers_by_lastname">Sort Drivers By LastName</string>
+    <string name="drivers_list_title">Drivers List</string>
+</resources>
