@@ -5,7 +5,6 @@ import com.santosh.republicservices.model.DriversAndRoutesRepository
 import com.santosh.republicservices.model.data.Driver
 import com.santosh.republicservices.model.data.NetworkResult
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
@@ -13,6 +12,7 @@ import javax.inject.Inject
 class DriversAndRoutesViewModel @Inject constructor(
     private val driversAndRoutesRepository: DriversAndRoutesRepository
 ) : ViewModel() {
+
 
     private val list = ArrayList<Driver>()
 
